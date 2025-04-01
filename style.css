@@ -1,0 +1,177 @@
+.nav-img {
+    max-height: 7vh;
+    width: auto;
+}
+
+.main-image {
+  max-width: 100%;  /* Asegura que la imagen no se desborde horizontalmente */
+  height: auto;     /* Mantiene la proporción de la imagen */
+  object-fit: contain; /* Hace que la imagen se ajuste sin distorsionarse */
+  display: block;   /* Hace que la imagen se comporte como un bloque */
+  margin-left: auto; /* Centra la imagen */
+  margin-right: auto; /* Centra la imagen */
+  max-height: 60vh;   /* Limita la altura de la imagen al 60% del alto de la pantalla */
+}
+
+  /* Ajustes de la sección de inicio */
+#inicio {
+  padding: 50px 0;
+  height: auto;
+  position: relative;
+  overflow: hidden; /* Previene que el contenido se desborde */
+}
+  .jumbotron {
+    padding: 0; 
+  }
+  
+  p.lead {
+    font-size: 1.25rem;
+    color: #6c757d;
+  }
+
+h2.text-center {
+    text-align: center; 
+  }
+  
+  p.text-justify {
+    text-align: justify;
+  }
+  
+  .container {
+    margin-top: 30px;
+  }
+  
+  .col-md-6 {
+    padding: 15px;
+  }
+  
+ /* Sección de benefcios vs competencia */
+.feature-item {
+  display: flex;
+  flex-direction: row; /* Coloca los elementos en fila (horizontal) */
+  align-items: center;
+  justify-content: center; /* Centra los elementos dentro de la fila */
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.feature-icon {
+  width: auto; /* Tamaño del ícono */
+  height: auto;
+  max-height: 90px;
+  max-width: 90px;
+  margin-right: 15px; /* Espacio entre el ícono y el texto */
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 0;
+}
+
+/* Seccion de servicios */
+/* Sección de Cards */
+#cards-section {
+  background-color: #f8f9fa; /* Color de fondo para la sección */
+}
+
+/* Estilo general de las Cards */
+.card {
+  border: 1px solid #ddd; /* Borde sutil */
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Evitar que las imágenes se desborden */
+}
+
+/* Imagen de la Card */
+.card-img-top {
+  width: 100%;  /* Asegura que la imagen ocupe todo el ancho */
+  height: 200px;  /* Fija una altura para las imágenes */
+  object-fit: cover;  /* Mantiene la proporción de la imagen sin distorsionarla */
+}
+
+/* Estilo del texto y el contenido de la Card */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Botón de cada Card */
+.btn {
+  align-self: center;  /* Centra el botón */
+}
+
+
+  /* Seccion de responsividad */
+
+  @media (max-width: 768px) {
+    #inicio {
+      padding: 30px;    }
+  
+    .col-md-6 {
+      flex: 1 100%;
+      text-align: center;
+      padding: 10px;  /* Añadir un pequeño padding en las columnas */
+    }
+  
+    .main-image {
+      max-height: 50vh; /* Limitar la altura de la imagen a la mitad de la pantalla en dispositivos móviles */
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap; /* Permite que los elementos se acomoden bien en pantallas pequeñas */
+      justify-content: center; /* Centra los elementos */
+    }
+  
+    .col-md-4 {
+      flex: 1 0 100%; /* Hace que las columnas ocupen el 100% del ancho en pantallas pequeñas */
+      text-align: center; /* Asegura que el texto esté centrado */
+    }
+  
+    .feature-item {
+      flex-direction: column; /* Apila los elementos verticalmente en pantallas pequeñas */
+      align-items: center; /* Asegura que los elementos estén centrados en pantallas pequeñas */
+      padding-right: 0;
+      padding-left: 0;
+    }
+  
+    .feature-icon {
+      margin-right: 0;
+    }
+  
+    h5 {
+      font-size: 1.1rem; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+    }
+  
+    p {
+      font-size: 0.9rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+    }
+
+    .card-img-top {
+      height: 150px;  /* Reduce la altura de la imagen en pantallas pequeñas */
+    }
+  
+    .card-body {
+      padding: 10px;
+    }
+  
+  }
