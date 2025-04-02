@@ -119,7 +119,7 @@ p {
 /* Botón de cada Card */
 .btn {
   align-self: center;  /* Centra el botón */
-  background: linear-gradient(to top,     ); /* Degradado de abajo hacia arriba */
+  background: linear-gradient(to top, #572663,   #ba2c74   ); /* Degradado de abajo hacia arriba */
   transition: background 0.3s ease, transform 0.3s ease; /* Transiciones suaves para el fondo y el efecto de escalado */
 }
 .btn:hover {
