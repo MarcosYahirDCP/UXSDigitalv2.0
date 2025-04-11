@@ -8,38 +8,45 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="resources/Logo_UXSD.webp" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-light bg-white">
-    <div class="container-xl nav-fill">
-      <a class="navbar-brand" href="#"><img class="nav-img" src="resources/Logo_UXSD.webp" alt=""></a>
-      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="collapsibleNavId">
-        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-          <li class="nav-item  h5">
-            <a class="nav-link active" href="#" aria-current="page">
-              Inicio
-              <span class="visually-hidden">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item h5">
-            <a class="nav-link" href="#">Servicios</a>
-          </li>
-          <li class="nav-item h5">
-            <a class="nav-link" href="#">Contacto</a>
-          </li>
-        </ul>
-      </div>
+<!-- Navbar Menu -->
+<nav class="navbar navbar-expand-sm navbar-light bg-white sticky-top">
+  <div class="container-xl nav-fill">
+    <a class="navbar-brand" href="#"><img class="nav-img" src="resources/Logo_UXSD.webp" alt=""></a>
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+      data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav ms-auto mt-2 mt-lg-0 d-flex justify-content-center align-items-center">
+        <li class="nav-item h5 ms-2">
+          <a class="nav-link active" href="#inicio" id="inicio-link">Inicio</a>
+        </li>
+        <li class="nav-item h5 ms-2">
+          <a class="nav-link" href="#servicios" id="servicios-link">Servicios</a>
+        </li>
+        <!-- Botón de Contacto con ícono de WhatsApp -->
+        <li class="nav-item h5 ms-2">
+          <button class="btn btn-primary nav-link text-white" type="button" onclick="window.open('https://wa.me/2281324175', '_blank')">
+            <i class="fab fa-whatsapp" style="margin-right: 8px;"></i> Contáctanos
+          </button>
+        </li>
+      </ul>
     </div>
-  </nav>
-  <div>
+  </div>
+</nav>
 
+  
+<!-- Sección de inicio -->
+  <div>
     <section id="inicio" class="bg-light">
       <div class="jumbotron d-flex align-items-center bg-light">
         <div class="container text-center">
@@ -60,17 +67,18 @@
         </div>
       </div>
     </section>
-    <!-- Seccion de Caracteristicas que nos potencian frente a otros -->
-    <section class="bg-white py-2">
+<!-- Sección de beneficios sobre la competencia -->
+    <section id="caracteristicas" class="bg-white py-2 pb-0">
       <div class="container">
         <div class="row justify-content-center">
           <!-- Característica 1: Consultoría UX/UI -->
           <div class="col-md-4 mb-4 d-flex align-items-center">
             <div class="feature-item">
-              <img src="resources/stars_review_user.webp" alt="Consultoría UX/UI" class="feature-icon">
+              <img src="resources/idea_icon.webp" alt="Consultoría UX/UI" class="feature-icon">
               <div>
                 <h5>Asesoramos su idea</h5>
-                <p>Transformamos tu producto en una experiencia intuitiva que tus usuarios adorarán.</p>
+                <p class="text-justify">Transformamos tu producto en una experiencia intuitiva que tus usuarios
+                  adorarán.</p>
               </div>
             </div>
           </div>
@@ -81,7 +89,8 @@
               <img src="resources/marketing_icon.webp" alt="Marketing Digital" class="feature-icon">
               <div>
                 <h5>Colaboramos con su marca</h5>
-                <p>Diseñamos estrategias para aumentar tu visibilidad y captar más clientes en redes sociales.</p>
+                <p class="text-justify">Diseñamos estrategias para aumentar tu visibilidad y captar más clientes en
+                  redes sociales.</p>
               </div>
             </div>
           </div>
@@ -92,18 +101,43 @@
               <img src="resources/agil_icon.webp" alt="Desarrollo Ágil" class="feature-icon">
               <div>
                 <h5>Usted es lo más importante</h5>
-                <p>Le ayudamos a crear productos robustos con una metodología ágil, acorde a sus necesidades y tiempos.
-                </p>
+                <p class="text-justify">Le ayudamos a crear productos robustos con una metodología ágil, acorde a sus
+                  necesidades y tiempos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <!-- Característica 4: Nueva Sección -->
+          <div class="col-md-4 mb-4 d-flex align-items-center">
+            <div class="feature-item">
+              <img src="resources/atencion_icon.webp" alt="Atencion Personalizada" class="feature-icon">
+              <div>
+                <h5>Atención personalizada</h5>
+                <p class="text-justify">No importa que si eres una empresa o una persona, le ofrecemos soluciones
+                  adaptadas a Sus necesidades y nos adaptamos a tu presupuesto.</p>
               </div>
             </div>
           </div>
 
+          <!-- Característica 5: Nueva Sección -->
+          <div class="col-md-4 mb-4 d-flex align-items-center">
+            <div class="feature-item">
+              <img src="resources/diseño_icon.webp" alt="Diseño Gráfico General" class="feature-icon">
+              <div>
+                <h5>No todo es desarrollo</h5>
+                <p class="text-justify">También creamos diseños exclusivos para invitaciones, tarjetas, carteles y otros
+                  elementos gráficos personalizados para cualquier ocasión.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Seccion de cards de servicios -->
-    <section id="cards-section" class="bg-light py-2">
+<!-- Seccion de Servicios -->
+    <section id="servicios" class="bg-light py-2 pb-5">
       <div class="container py-2">
         <p class="h2 text-center mb-4"> Nuestros Servicios</p>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
@@ -113,40 +147,27 @@
               <img src="resources/software_dev_img.webp" class="card-img-top" alt="Imagen 1">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title text-center">Desarrollo de Software a la medida</h5>
-                <p class="card-text text-justify">Creamos software a medida que se adapta a tus necesidades. Acompañamiento práctico
+                <p class="card-text text-justify">Creamos software a medida que se adapta a tus necesidades.
+                  Acompañamiento práctico
                   para implementar la solución de manera ágil y rápida.</p>
-                <a href="#" class="btn btn-primary mt-auto">Ver Paquetes</a>
-              </div>
+                  <button class="btn btn-primary mt-auto" onclick="verMas(1)">Ver más Información</button>
+                </div>
             </div>
           </div>
-
           <!-- Card 2 -->
           <div class="col">
             <div class="card h-100">
               <img src="resources/web_dev_img.webp" class="card-img-top" alt="Imagen 2">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title text-center">Desarrollo Web</h5>
-                <p class="card-text text-justify">Desarrollamos sitios web funcionales, rápidos y accesibles. Te acompañamos para que
+                <p class="card-text text-justify">Desarrollamos sitios web funcionales, rápidos y accesibles. Te
+                  acompañamos para que
                   puedas implementar cambios y mejoras sin complicaciones.</p>
-                <a href="#" class="btn btn-primary mt-auto">Ver Paquetes</a>
+                  <button class="btn btn-primary mt-auto" onclick="verMas(2)">Ver más Información</button>
               </div>
             </div>
           </div>
-
           <!-- Card 3 -->
-          <div class="col">
-            <div class="card h-100">
-              <img src="resources/mobile_dev_img.webp" class="card-img-top" alt="Imagen 2">
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title text-center">Desarrollo Móvil</h5>
-                <p class="card-text text-justify">Desarrollamos apps móviles intuitivas y funcionales. Brindamos acompañamiento para
-                  que la aplicacion cubra sus necesidades.</p>
-                <a href="#" class="btn btn-primary mt-auto">Ver Paquetes</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
           <div class="col">
             <div class="card h-100">
               <img src="resources/diseño_ux_img.webp" class="card-img-top" alt="Imagen 2">
@@ -155,64 +176,51 @@
                 <p class="card-text text-justify">Optimiza tu experiencia digital.
                   Le ayudamos a mejorar la usabilidad y estética de tu producto digital, creando experiencias
                   intuitivas y funcionales. Recibirás recomendaciones prácticas para aplicar en tu sistema.</p>
-                <a href="#" class="btn btn-primary mt-auto">Ver Paquetes</a>
+                  <button class="btn btn-primary mt-auto" onclick="verMas(3)">Ver más Información</button>
               </div>
             </div>
           </div>
-
+          <!-- Card 4 -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="resources/asesoria_img.webp" class="card-img-top" alt="Imagen de Asesoría">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-center">Asesoría Integral en Marketing y Redes Sociales</h5>
+                <p class="card-text text-justify">
+                  Optimiza tu estrategia digital con recomendaciones personalizadas para mejorar tu posicionamiento,
+                  segmentación y conversión.
+                  También te ofrecemos estrategias y contenido para potenciar tu presencia en redes sociales, captar más
+                  clientes y aumentar tu visibilidad online.
+                </p>
+                <button class="btn btn-primary mt-auto" onclick="verMas(4)">Ver más Información</button>
+              </div>
+            </div>
+          </div>
           <!-- Card 5 -->
           <div class="col">
-            <div class="card h-100">
-              <img src="resources/asesoria_img.webp" class="card-img-top" alt="Imagen 3">
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title text-center">Asesoria en Marketing</h5>
-                <p class="card-text text-justify">Optimiza tu estrategia digital. Recibirás recomendaciones personalizadas para
-                  mejorar tu posicionamiento, segmentación y conversión, además, acompañamiento práctico para
-                  implementar
-                  mejoras y atraer a nuevos clientes.</p>
-                <a href="#" class="btn btn-primary mt-auto">Ver Paquetes</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="col">
-            <div class="card h-100">
-              <img src="resources/manejo_redes_sociales.webp" class="card-img-top" alt="Imagen 3">
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title text-center">Manejo de Redes Sociales</h5>
-                <p class="card-text text-justify">Potencia tu presencia online.
-                  Te brindamos estrategias y contenido personalizado para aumentar tu visibilidad y captar más clientes
-                  en redes sociales. Impulsaremos tu marca en el entorno digital que mas le convenga.</p>
-                <a href="#" class="btn btn-primary mt-auto">Ver Paquetes</a>
-              </div>
-            </div>
-          </div>
-
-           <!-- Card 7 -->
-           <div class="col">
             <div class="card h-100">
               <img src="resources/identidad_coorp_img.webp" class="card-img-top" alt="Imagen 3">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title text-center">Identidad Coorporativa</h5>
                 <p class="card-text text-justify">Crea una identidad visual sólida
-                  Te ayudamos a diseñar una imagen coherente y atractiva para tu marca. Generamos las pautas de diseño y la documentacion necesaria para representar adecuadamente su marca.
-                  </p>
-                <a href="#" class="btn btn-primary mt-auto">Ver Paquetes</a>
+                  Te ayudamos a diseñar una imagen coherente y atractiva para tu marca. Generamos las pautas de diseño y
+                  la documentacion necesaria para representar adecuadamente su marca.
+                </p>
+                <button class="btn btn-primary mt-auto" onclick="verMas(5)">Ver más Información</button>
               </div>
             </div>
           </div>
-
-           <!-- Card 8 -->
-           <div class="col">
+          <!-- Card 6 -->
+          <div class="col">
             <div class="card h-100">
               <img src="resources/contenido_graf_img.webp" class="card-img-top" alt="Imagen 3">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title text-center">Producción de contenido gráfico</h5>
                 <p class="card-text text-justify">Elaboración de material visual atractivo
-                  Generamos contenido gráfico y publicitario para sus necesidades, como folletos, invitaciones y tarjetas de presentación, que representen su marca o evento.
-                  </p>
-                <a href="#" class="btn btn-primary mt-auto">Ver Paquetes</a>
+                  Generamos contenido gráfico y publicitario para sus necesidades, como folletos, invitaciones y
+                  tarjetas de presentación, que representen su marca o evento.
+                </p>
+                <button class="btn btn-primary mt-auto" onclick="verMas(6)">Ver más Información</button>
               </div>
             </div>
           </div>
@@ -220,41 +228,82 @@
       </div>
     </section>
 
+
+
+   <!-- Vista Detallada del Servicio -->
+<section id="detalle-servicio"  style="display: none;">
+  <!-- Banner con imagen dinámica -->
+  <div class="banner" id="banner" style="height: 400px; background-size: cover; background-position: center;">
+    <div class="container mt-0">
+      <!-- Botón de regreso -->
+      <button class="btn btn-light border-0 mt-3 text-white" onclick="regresar()">
+        <i class="fas fa-arrow-left "></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Descripción del servicio -->
+  <div class="container py-2">
+    <h1 id="titulo-servicio" class="text-center .h1"></h1>
+    <p class="lead text-justify" id="descripcion-servicio"></p>
+  </div>
+
+  <!-- Sección con lista a la izquierda y una imagen a la derecha -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <ul id="lista-servicios"></ul>
+      </div>
+      <div class="col-md-6">
+        <img id="imagen-servicio" src="" class="img-fluid" alt="Imagen Servicio">
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de planes (si aplica) -->
+  <div class="container mt-5" id="planes">
+    <h3>Planes</h3>
+    <div class="row" id="plan-list"></div>
+  </div>
+
+  <!-- Botón para cotizar por WhatsApp -->
+  <div class="container mt-5 text-center">
+    <a href="https://wa.me/2281324175" class="btn btn-success">
+      <i class="fab fa-whatsapp"></i> Cotiza por WhatsApp
+    </a>
+  </div>
+</section>
+
+
+<!-- Seccion Footer -->
     <footer class="footer text-center text-lg-start py-2">
       <div class="container text-center text-md-start">
-          <div class="row">
-              <div class="col-md-4">
-                  <h5>Nombre de la Empresa</h5>
-                  <p>Comprometidos con la excelencia y la innovación.</p>
-              </div>
-              <div class="col-md-4">
-                  <h5>Enlaces</h5>
-                  <ul class="list-unstyled">
-                      <li><a href="#">Inicio</a></li>
-                      <li><a href="#">Servicios</a></li>
-                      <li><a href="#">Acerca de</a></li>
-                      <li><a href="#">Contacto</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-4">
-                  <h5>Contacto</h5>
-                  <p>Email: contacto@empresa.com</p>
-                  <p>Teléfono: +52 123 456 7890</p>
-                  <p>Dirección: Calle Ficticia 123, Ciudad, País</p>
-              </div>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img src="resources/Logo_UXSD.webp" class="logo-footer">
+           </div>
+          <div class="col-md-4">
+            <h5>UXSDigital</h5>
+            <p class="card-text text-justify">Comprometidos con la excelencia y la innovación.</p>
           </div>
-          <div class="text-center mt-3">
-              <p>&copy; 2025 UXSDigital. Todos los derechos reservados.</p>
+         
+          <div class="col-md-4">
+            <h5>Contacto</h5>
+            <p>Correo: <a href="mailto:uxsdigital@gmail.com">uxsdigital@gmail.com</a></p>
+            <p>Teléfono: +52 123 456 7890</p>
+            <p>Ubicación: Xalapa, Veracruz, México</p>
           </div>
+        </div>
+        <div class="text-center mt-3">
+          <p>&copy; 2025 UXSDigital. Todos los derechos reservados.</p>
+        </div>
       </div>
-  </footer>
-
-
-
-
+    </footer>
+<!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
+      <script src="index.js"></script>
 </body>
 
 </html>

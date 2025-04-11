@@ -2,15 +2,24 @@
     max-height: 7vh;
     width: auto;
 }
+/* Estilo para la clase active */
+.nav-link.active {
+  background: linear-gradient(to top, #572663,   #ba2c74 ) !important; 
+  -webkit-background-clip: text !important; 
+  color: transparent !important; 
+  transition: background 0.3s ease !important;
+  outline: none;
+  border: none; 
+}
 
 .main-image {
-  max-width: 100%;  /* Asegura que la imagen no se desborde horizontalmente */
-  height: auto;     /* Mantiene la proporción de la imagen */
-  object-fit: contain; /* Hace que la imagen se ajuste sin distorsionarse */
-  display: block;   /* Hace que la imagen se comporte como un bloque */
-  margin-left: auto; /* Centra la imagen */
-  margin-right: auto; /* Centra la imagen */
-  max-height: 60vh;   /* Limita la altura de la imagen al 60% del alto de la pantalla */
+  max-width: 100%;  
+  height: auto; 
+  object-fit: contain;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+  max-height: 60vh;  
 }
 
   /* Ajustes de la sección de inicio */
@@ -44,16 +53,23 @@ h2.text-center {
   .col-md-6 {
     padding: 15px;
   }
+  /* Ajuste para las secciones para que no queden cubiertas por el navbar */
+  #inicio, #servicios {
+    padding-top: 70px; /* Asegúrate de que esto sea mayor que la altura del navbar */
+  }
+  #servicios{
+    display: none;
+  }
+
   
- /* Sección de benefcios vs competencia */
+ /* Sección de beneficios vs competencia */
 .feature-item {
   display: flex;
   flex-direction: row; /* Coloca los elementos en fila (horizontal) */
   align-items: center;
-  justify-content: center; /* Centra los elementos dentro de la fila */
+  justify-content: flex-start; /* Alinea los elementos a la izquierda */
   padding-right: 20px;
   padding-left: 20px;
-  
 }
 
 .feature-icon {
@@ -62,8 +78,7 @@ h2.text-center {
   max-height: 90px;
   max-width: 90px;
   margin-right: 15px; /* Espacio entre el ícono y el texto */
-  filter:drop-shadow(0 4px 1px rgba(0, 0, 0, 0.2)) ; 
-
+  filter: drop-shadow(0 4px 1px rgba(0, 0, 0, 0.2));
 }
 
 h5 {
@@ -77,6 +92,7 @@ p {
   color: #777;
   margin-bottom: 0;
 }
+
 
 /* Seccion de servicios */
 
@@ -116,6 +132,11 @@ p {
   margin-bottom: 20px;
 }
 
+/* Espaciado entre filas */
+section.bg-white .container .row {
+  margin-bottom: 30px; /* Agrega espacio entre las filas */
+}
+
 /* Botón de cada Card */
 .btn {
   align-self: center;  /* Centra el botón */
@@ -145,6 +166,12 @@ p {
 .footer p {
   color: white;
 }
+.logo-footer{
+  max-width: 90%;
+  max-height: 11vh;
+
+}
+
   /* Seccion de responsividad */
 
   @media (max-width: 768px) {
@@ -172,14 +199,12 @@ p {
     }
   
     .feature-item {
-      flex-direction: column; /* Apila los elementos verticalmente en pantallas pequeñas */
-      align-items: center; /* Asegura que los elementos estén centrados en pantallas pequeñas */
-      padding-right: 0;
-      padding-left: 0;
+      flex-direction: column; /* Los elementos se apilan en pantallas más pequeñas */
+      text-align: center; /* Centra el texto para pantallas pequeñas */
     }
   
     .feature-icon {
-      margin-right: 0;
+      margin-bottom: 10px; /* Espacio entre el ícono y el texto */
     }
   
     h5 {
