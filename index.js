@@ -45,8 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-
-
 function verMas(id) {
   // Ocultar la sección de servicios
   document.getElementById("servicios").style.display = "none";
@@ -61,12 +59,16 @@ function verMas(id) {
 
       Trabajamos de la mano con nuestros clientes para entender sus procesos, identificar áreas de mejora y desarrollar soluciones tecnológicas que optimicen la productividad, aumenten la competitividad y proporcionen una experiencia de usuario intuitiva. Nuestra metodología ágil permite una implementación rápida y flexible, adaptándose a los cambios y desafíos del entorno empresarial.`,
       imagenBanner: "resources/software_dev_img.webp",
-      imagenServicio: "resources/software_dev_img.webp",
+      imagenServicio: "resources/services_img/software_medida_img.webp",
       lista: [
-        "Desarrollo de aplicaciones web",
-        "Optimización de procesos",
-        "Soluciones móviles",
-        "Consultoría personalizada"
+        `Personalización total:
+        Se construye desde cero o se adapta totalmente a lo que el cliente necesita.`,
+        `Integración con sistemas existentes:
+        Puede conectarse con bases de datos, ERP, CRM, entre otros. `,
+        `Escalabilidad:
+         Está preparado para crecer o adaptarse conforme evoluciona el negocio. `,
+        `Soporte y mantenimiento personalizado:
+         Se ofrece asistencia especializada según la solución creada. `
       ],
       planes: [
         { nombre: "Plan Básico", descripcion: "Desarrollo de software básico con características estándar." },
@@ -80,12 +82,18 @@ function verMas(id) {
 
       Trabajamos de la mano con nuestros clientes para entender sus requerimientos y transformar sus ideas en soluciones web funcionales, optimizando la experiencia del usuario, mejorando la accesibilidad y asegurando la integración fluida con otros sistemas. Nuestro enfoque ágil y flexible permite una implementación rápida, que se adapta continuamente a las necesidades cambiantes del mercado y del entorno tecnológico, garantizando que cada proyecto web sea competitivo, escalable y capaz de evolucionar conforme a los avances del sector.`,
       imagenBanner: "resources/web_dev_img.webp",
-      imagenServicio: "resources/web_dev_img.webp",
+      imagenServicio: "resources/services_img/web_img.WEBP",
       lista: [
-        "Desarrollo de sitios responsivos",
-        "Optimización para SEO",
-        "Diseño de interfaces amigables",
-        "Mantenimiento web"
+        `Presencia online efectiva:
+        Diseños que representan tu marca y transmiten confianza.`,
+        `Responsive Design:
+        Adaptabilidad total a móviles, tabletas y pantallas grandes.`,
+        `Optimización de velocidad:
+        Sitios rápidos y eficientes para mejorar la experiencia del usuario.`,
+        `Integración de herramientas:
+        Formularios, chat, redes sociales, y más conectados a tu sistema.`,
+        `SEO técnico:
+        Código limpio y estructurado para mejorar tu posicionamiento en buscadores.`
       ],
       planes: [] // No tiene planes, por lo que esta sección se ocultará
     },
@@ -95,12 +103,18 @@ function verMas(id) {
 
       En caso de ser necesario, nos especializamos en realizar propuestas visuales detalladas, dejando la implementación y desarrollo de las soluciones a su equipo técnico. Nuestro trabajo consiste en entregar un diseño completo con prototipos interactivos, especificaciones claras y recomendaciones que guíen a los desarrolladores en la creación de una experiencia coherente y efectiva. Con un enfoque ágil y flexible, nos aseguramos de que la propuesta visual se alinee perfectamente con los objetivos del negocio y las expectativas del usuario, proporcionando un diseño que se pueda ejecutar fácilmente en la fase de desarrollo.`,
       imagenBanner: "resources/diseño_ux_img.webp",
-      imagenServicio: "resources/diseño_ux_img.webp",
+      imagenServicio: "resources/services_img/ux-ui_img.webp",
       lista: [
-        "Diseño de interfaces web y móviles",
-        "Investigación de usuarios",
-        "Prototipos interactivos",
-        "Pruebas de usabilidad"
+        `Diseño centrado en el usuario:
+        Creamos experiencias digitales intuitivas y funcionales.`,
+        `Interfaces atractivas:
+        Estética moderna y coherente con la identidad de tu marca.`,
+        `Investigación y validación:
+        Basamos el diseño en datos reales y pruebas con usuarios.`,
+        `Prototipado interactivo:
+        Visualiza la navegación antes de desarrollarla.`,
+        `Documentación clara:
+        Permite un desarrollo preciso por parte del equipo de desarrollo.`
       ],
       planes: [
         { nombre: "Plan UX", descripcion: "Investigación y diseño de UX." },
@@ -112,17 +126,61 @@ function verMas(id) {
       descripcion: `Nuestro servicio de Asesoría Integral en Marketing y Redes Sociales está diseñado para ayudar a las empresas a maximizar su presencia en línea y optimizar sus estrategias digitales. Ofrecemos una combinación de asesoría experta y gestión completa de redes sociales, adaptándonos a las necesidades específicas de cada cliente.
 
       Además de brindar orientación estratégica sobre marketing digital, proporcionamos un enfoque práctico al tomar la responsabilidad de gestionar y actualizar sus redes sociales de manera profesional. Nos encargamos de la creación de contenido, la planificación de publicaciones, la interacción con la comunidad y el análisis de resultados, todo con el objetivo de mejorar su visibilidad, generar mayor engagement y alcanzar los objetivos comerciales. Nuestro enfoque flexible y personalizado garantiza que cada acción se alinee con los valores de su marca y las expectativas de su audiencia, asegurando una presencia efectiva y coherente en las plataformas digitales.`,
-      imagenBanner: "resources/diseño_ux_img.webp",
-      imagenServicio: "resources/diseño_ux_img.webp",
+      imagenBanner: "resources/asesoria_img.webp",
+      imagenServicio: "resources/services_img/manejo_redes_sociales.webp",
       lista: [
-        "Diseño de interfaces web y móviles",
-        "Investigación de usuarios",
-        "Prototipos interactivos",
-        "Pruebas de usabilidad"
+        `Estrategia digital personalizada:
+        Planificamos acciones alineadas con tus objetivos de negocio.`,
+        `Gestión de redes sociales:
+        Publicaciones, contenido y respuesta a tu audiencia.`,
+        `Optimización de marca:
+        Mejoramos tu presencia visual y coherencia en medios digitales.`,
+        `Asesoría estratégica:
+        Guíamos la toma de decisiones para potenciar tu presencia digital.`,
+        `Contenido enfocado:
+        Diseñamos mensajes que conectan con tu público ideal.`
       ],
       planes: [
-        { nombre: "Plan UX", descripcion: "Investigación y diseño de UX." },
-        { nombre: "Plan UI", descripcion: "Diseño de interfaces visualmente atractivas." }
+        {
+          nombre: "Paquete Básico",
+          descripcion: "Desarrollo de software básico con características estándar.",
+          imagen: "resources/plan_basic_img.webp",
+          beneficios: [
+            "Diseño, creación y optimización de perfil en 2 redes sociales (Facebook e Instagram)",
+            "Estrategia de contenido básica (tono de comunicación y línea gráfica inicial)",
+            "3 publicaciones semanales (estáticas o carruseles)",
+            "3 historias semanales",
+            "1 reel mensual",
+            "Reporte básico mensual (alcance e interacción)"
+          ]
+        },
+        {
+          nombre: "Paquete Crecimiento",
+          descripcion: "Desarrollo completo con integración personalizada.",
+          imagen: "resources/plan_crecimiento_img.webp",
+          beneficios: [
+            "Diseño, creación y optimización de perfil en 3 redes sociales (Facebook, Instagram y una a elegir)",
+            "Estrategia de contenido avanzada (segmentación de audiencia y calendario de publicaciones)",
+            "4 publicaciones semanales (con diseño profesional)",
+            "5 historias semanales",
+            "2 reels mensuales",
+            "Reporte detallado mensual (alcance, interacciones y sugerencias de mejora)"
+          ]
+        },
+        {
+          nombre: "Plan Premium",
+          descripcion: "Software robusto, escalable y con soporte completo.",
+          imagen: "resources/plan_premium_img.webp",
+          beneficios: [
+            "Diseño, creación y optimización de perfil en 3 redes sociales (Facebook, Instagram y una a elegir)",
+            "Estrategia de contenido avanzada (segmentación de audiencia y calendario de publicaciones)",
+            "5 publicaciones semanales (con diseño profesional)",
+            "7 historias semanales",
+            "4 reels mensuales",
+            "Reporte detallado mensual (alcance, interacciones y sugerencias de mejora)",
+            "1 sesión fotográfica mensual (hasta 15 imágenes editadas y 1 video corto promocional)"
+          ]
+        }
       ]
     },
     5: {
@@ -130,13 +188,17 @@ function verMas(id) {
       descripcion: `Nuestro servicio de Identidad Corporativa está diseñado para ayudar tanto a empresas establecidas como a pequeñas empresas y cualquier persona en general a crear una imagen sólida y coherente que refleje sus valores, misión y visión. Nos especializamos en el desarrollo de una identidad visual única que permita a su marca destacarse en el mercado, sin importar su tamaño o fase de emprendimiento.
 
       Trabajamos estrechamente con nuestros clientes para entender sus necesidades, cultura y objetivos específicos, creando una identidad corporativa personalizada que se adapte a su esencia. Desde el diseño de logotipos y la selección de paletas de colores hasta la definición de tipografía y elementos gráficos, nos aseguramos de que cada componente visual sea consistente y apropiado para el público al que se dirigen. Además, proporcionamos manuales de marca para garantizar la correcta aplicación de estos elementos en todos los canales de comunicación. Nuestro enfoque flexible y adaptado a cada cliente busca establecer una imagen fuerte y memorable que impulse su crecimiento y conexión con la audiencia, independientemente de su tamaño o sector.`,
-      imagenBanner: "resources/diseño_ux_img.webp",
-      imagenServicio: "resources/diseño_ux_img.webp",
+      imagenBanner: "resources/identidad_coorp_img.webp",
+      imagenServicio: "resources/services_img/identida_img.webp",
       lista: [
-        "Diseño de interfaces web y móviles",
-        "Investigación de usuarios",
-        "Prototipos interactivos",
-        "Pruebas de usabilidad"
+        `Análisis de marca:
+        Identificamos los valores y esencia que deben reflejarse visualmente.`,
+        `Diseño de logotipo:
+        Creamos un símbolo único y representativo para tu marca.`,
+        `Definición visual:
+        Selección de colores, tipografías y estilos coherentes.`,
+        `Adaptación a diferentes medios:
+        Aseguramos que tu imagen sea sólida en cualquier plataforma.`
       ],
       planes: [
         { nombre: "Plan UX", descripcion: "Investigación y diseño de UX." },
@@ -148,13 +210,17 @@ function verMas(id) {
       descripcion: `Nuestro servicio de Producción de Contenido Gráfico está diseñado para ofrecer soluciones creativas y personalizadas que ayuden a las personas y empresas o negocios a comunicar de manera efectiva su mensaje visual. Nos especializamos en la creación de una amplia gama de materiales gráficos, tales como invitaciones, tarjetas de presentación, anuncios, lonas, playeras, banners, y otros productos promocionales, todos diseñados para reflejar la identidad de su marca y captar la atención de su audiencia.
 
       Trabajamos de cerca con nuestros clientes para entender sus necesidades y objetivos, asegurándonos de que cada pieza gráfica sea visualmente atractiva y esté alineada con la imagen corporativa de la marca. Desde el concepto inicial hasta el diseño final, nos encargamos de todo el proceso creativo, garantizando que cada material sea único, profesional y de alta calidad. Ya sea para eventos, campañas publicitarias o merchandising, nuestra producción de contenido gráfico proporciona soluciones efectivas para mejorar la visibilidad y el impacto de su marca en cualquier formato o plataforma.`,
-      imagenBanner: "resources/diseño_ux_img.webp",
-      imagenServicio: "resources/diseño_ux_img.webp",
+      imagenBanner: "resources/contenido_graf_img.webp",
+      imagenServicio: "resources/services_img/material_diseño.webp",
       lista: [
-        "Diseño de interfaces web y móviles",
-        "Investigación de usuarios",
-        "Prototipos interactivos",
-        "Pruebas de usabilidad"
+        `Material promocional: 
+        Flyers, posters, lonas, banners y otros elementos para difusión.`,
+        `Invitaciones y tarjetas:
+        Diseños especiales para eventos sociales o corporativos.`,
+        `Sublimados y productos físicos:
+        Gráficos listos para impresión en tazas, playeras, stickers, etc.`,
+        `Entrega en formatos adecuados:
+        Archivos listos para impresión profesional o uso digital.`
       ],
       planes: [
         { nombre: "Plan UX", descripcion: "Investigación y diseño de UX." },
@@ -178,6 +244,8 @@ function verMas(id) {
   // Llenar la lista de características
   const listaElement = document.getElementById("lista-servicios");
   listaElement.innerHTML = ''; // Limpiar la lista antes de agregar
+  listaElement.classList.add("lista-iconos"); // 👈 AÑADIR ESTA CLASE
+
   servicio.lista.forEach(item => {
     const li = document.createElement("li");
     li.innerText = item;
@@ -194,12 +262,17 @@ function verMas(id) {
     planListElement.innerHTML = ''; // Limpiar los planes antes de agregar
     servicio.planes.forEach(plan => {
       const col = document.createElement("div");
-      col.classList.add("col-md-4");
+      col.classList.add("col-md-4", "d-flex", "justify-content-center");
+    
+      const beneficios = plan.beneficios.map(item => `<li>${item}</li>`).join("");
+    
       col.innerHTML = `
-        <div class="card">
-          <div class="card-body">
+        <div class="card text-center p-3" style="width: 100%; max-width: 320px;">
+          <img src="${plan.imagen}" class="plan-img" alt="Imagen del ${plan.nombre}" style="height: 180px;">
+          <div class="card-body d-flex flex-column justify-content-between">
             <h5 class="card-title">${plan.nombre}</h5>
             <p class="card-text">${plan.descripcion}</p>
+            <ul class="text-start mx-auto px-3 small">${beneficios}</ul>
           </div>
         </div>
       `;

@@ -93,6 +93,11 @@ p {
   margin-bottom: 0;
 }
 
+.btn-back{
+ height: 8vh;
+ width: 8vh;
+}
+
 
 /* Seccion de servicios */
 
@@ -171,7 +176,28 @@ section.bg-white .container .row {
   max-height: 11vh;
 
 }
+.lista-iconos li {
+  list-style: none;
+  padding-left: 38px; /* Más espacio entre ícono y texto */
+  background: url('resources/icon_list.webp') no-repeat left 0.4em; /* Alinea ícono arriba */
+  background-size: 30px 30px; /* Tamaño consistente */
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
 
+#imagen-servicio{
+  max-height: 550px;
+  object-fit: cover;
+}
+
+.plan-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Alinea los elementos a la izquierda */
+  max-height: 15vh;
+  object-fit: scale-down;
+}
   /* Seccion de responsividad */
 
   @media (max-width: 768px) {
