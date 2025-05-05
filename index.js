@@ -71,10 +71,8 @@ function verMas(id) {
          Se ofrece asistencia especializada según la solución creada. `
       ],
       planes: [
-        { nombre: "Plan Básico", descripcion: "Desarrollo de software básico con características estándar." },
-        { nombre: "Plan Avanzado", descripcion: "Desarrollo completo con integración de características personalizadas." },
-        { nombre: "Plan Premium", descripcion: "Desarrollo de software con soporte completo y mantenimiento." }
-      ]
+      ],
+      mensajeWhatsApp: "Hola, estoy interesado en el servicio de Desarrollo de Software a la Medida. ¿Podrían brindarme más información?"
     },
     2: {
       titulo: "Desarrollo Web",
@@ -95,7 +93,9 @@ function verMas(id) {
         `SEO técnico:
         Código limpio y estructurado para mejorar tu posicionamiento en buscadores.`
       ],
-      planes: [] // No tiene planes, por lo que esta sección se ocultará
+      planes: [], // No tiene planes, por lo que esta sección se ocultará
+      mensajeWhatsApp:"Hola, me interesa el servicio de Desarrollo Web. ¿Podrían darme más información?"
+
     },
     3: {
       titulo: "Diseño UX/UI",
@@ -117,12 +117,11 @@ function verMas(id) {
         Permite un desarrollo preciso por parte del equipo de desarrollo.`
       ],
       planes: [
-        { nombre: "Plan UX", descripcion: "Investigación y diseño de UX." },
-        { nombre: "Plan UI", descripcion: "Diseño de interfaces visualmente atractivas." }
-      ]
+      ],
+      mensajeWhatsApp:"Hola, estoy interesado en el servicio de Diseño UX/UI. ¿Podrían contarme más?",
     },
     4: {
-      titulo: "Asesoría Integral en Marketing y Redes Sociales",
+      titulo: `Asesoría Integral en Marketing y Redes Sociales`,
       descripcion: `Nuestro servicio de Asesoría Integral en Marketing y Redes Sociales está diseñado para ayudar a las empresas a maximizar su presencia en línea y optimizar sus estrategias digitales. Ofrecemos una combinación de asesoría experta y gestión completa de redes sociales, adaptándonos a las necesidades específicas de cada cliente.
 
       Además de brindar orientación estratégica sobre marketing digital, proporcionamos un enfoque práctico al tomar la responsabilidad de gestionar y actualizar sus redes sociales de manera profesional. Nos encargamos de la creación de contenido, la planificación de publicaciones, la interacción con la comunidad y el análisis de resultados, todo con el objetivo de mejorar su visibilidad, generar mayor engagement y alcanzar los objetivos comerciales. Nuestro enfoque flexible y personalizado garantiza que cada acción se alinee con los valores de su marca y las expectativas de su audiencia, asegurando una presencia efectiva y coherente en las plataformas digitales.`,
@@ -142,46 +141,55 @@ function verMas(id) {
       ],
       planes: [
         {
-          nombre: "Paquete Básico",
+          nombre: `Paquete Básico <sup>${1}</sup> <sup>${2}</sup>`,
           descripcion: "Desarrollo de software básico con características estándar.",
           imagen: "resources/plan_basic_img.webp",
           beneficios: [
-            "Diseño, creación y optimización de perfil en 2 redes sociales (Facebook e Instagram)",
-            "Estrategia de contenido básica (tono de comunicación y línea gráfica inicial)",
-            "3 publicaciones semanales (estáticas o carruseles)",
-            "3 historias semanales",
-            "1 reel mensual",
-            "Reporte básico mensual (alcance e interacción)"
+            `Diseño, creación y optimización de perfil en 2 redes sociales (Facebook e Instagram)`,
+            `Estrategia de contenido básica <sup>${3}</sup>`,
+            `3 publicaciones semanales<sup>${4}</sup>`,
+            `3 historias semanales`,
+            `1 reel mensual`,
+            `Reporte básico mensual <sup>${5}</sup>`
           ]
         },
         {
-          nombre: "Paquete Crecimiento",
+          nombre: `Paquete Crecimiento <sup>${1}</sup> <sup>${2}</sup>`,
           descripcion: "Desarrollo completo con integración personalizada.",
           imagen: "resources/plan_crecimiento_img.webp",
           beneficios: [
-            "Diseño, creación y optimización de perfil en 3 redes sociales (Facebook, Instagram y una a elegir)",
-            "Estrategia de contenido avanzada (segmentación de audiencia y calendario de publicaciones)",
-            "4 publicaciones semanales (con diseño profesional)",
-            "5 historias semanales",
-            "2 reels mensuales",
-            "Reporte detallado mensual (alcance, interacciones y sugerencias de mejora)"
+            `Diseño, creación y optimización de perfil en 3 redes sociales (Facebook, Instagram y una a elegir)`,
+            `Estrategia de contenido avanzada<sup>${3}</sup>`,
+            `4 publicaciones semanales<sup>${4}</sup>`,
+            `5 historias semanales`,
+            `2 reels mensuales`,
+            `Reporte detallado mensual<sup>${5}</sup>`
           ]
         },
         {
-          nombre: "Plan Premium",
+          nombre: `Plan Premium <sup>${1}</sup>`,
           descripcion: "Software robusto, escalable y con soporte completo.",
           imagen: "resources/plan_premium_img.webp",
           beneficios: [
-            "Diseño, creación y optimización de perfil en 3 redes sociales (Facebook, Instagram y una a elegir)",
-            "Estrategia de contenido avanzada (segmentación de audiencia y calendario de publicaciones)",
-            "5 publicaciones semanales (con diseño profesional)",
-            "7 historias semanales",
-            "4 reels mensuales",
-            "Reporte detallado mensual (alcance, interacciones y sugerencias de mejora)",
-            "1 sesión fotográfica mensual (hasta 15 imágenes editadas y 1 video corto promocional)"
+            `Diseño, creación y optimización de perfil en 3 redes sociales (Facebook, Instagram y una a elegir)`,
+            `Estrategia de contenido avanzada <sup>${3}</sup>`,
+            `5 publicaciones semanales<sup>${4}</sup>`,
+            `7 historias semanales`,
+            `4 reels mensuales`,
+            `Reporte detallado mensual<sup>${5}</sup>`,
+            `1 sesión fotográfica mensual <sup>${6}</sup>`
           ]
         }
-      ]
+      ],
+      condiciones: [
+        "¹ El presupuesto para publicidad en redes sociales (Facebook Ads, Instagram Ads, etc.) no está incluido.",
+        "² Las fotos de productos o servicios deben ser proporcionadas por el cliente.",
+        "³ En el Paquete Básico, la estrategia de contenido se enfoca en definir el tono de comunicación y establecer una línea gráfica inicial que guíe la identidad visual de la marca. En la Estrategia de Contenido Avanzada, se incluyen todos los beneficios del Paquete Básico, sumando un análisis de segmentación de audiencia y la elaboración de un calendario estratégico de publicaciones.En el Paquete Premium, además de integrar todos los beneficios de la Estrategia Avanzada, se incorpora una planificación estratégica integral que optimiza el posicionamiento y crecimiento de la marca en plataformas digitales.",
+        "⁴ Paquete Básico: Incluye la creación de publicaciones en formato de imágenes estáticas o carruseles, desarrolladas a partir de la línea gráfica inicial de la marca. Paquete Crecimiento: Incorpora todos los beneficios del Paquete Básico y añade publicaciones diseñadas profesionalmente, optimizadas para mejorar la presencia visual y la coherencia de marca. Paquete Premium: Integra todos los beneficios del Paquete Crecimiento, sumando publicaciones con diseño avanzado y contenido estratégico optimizado para maximizar el impacto y la conversión en plataformas digitales.",
+        "⁵ aquete Básico: Incluye un reporte mensual que detalla las métricas de alcance e interacción de las publicaciones en redes sociales. Paquete Crecimiento: Incluye todos los beneficios del Paquete Básico y suma recomendaciones personalizadas de mejora, basadas en el análisis de desempeño de las campañas. Paquete Premium: Integra todos los beneficios del Paquete Crecimiento y añade un análisis avanzado de tendencias, acompañado de ajustes estratégicos para optimizar continuamente la presencia digital.",
+        "⁶ La sesión fotográfica contempla hasta 15 imágenes editadas en alta calidad y un video promocional corto, optimizado para redes sociales.",
+      ],
+      mensajeWhatsApp: "Hola, quisiera saber más sobre la Asesoría en Marketing y Redes Sociales."
     },
     5: {
       titulo: "Identidad Coorporativa",
@@ -201,9 +209,8 @@ function verMas(id) {
         Aseguramos que tu imagen sea sólida en cualquier plataforma.`
       ],
       planes: [
-        { nombre: "Plan UX", descripcion: "Investigación y diseño de UX." },
-        { nombre: "Plan UI", descripcion: "Diseño de interfaces visualmente atractivas." }
-      ]
+      ],
+      mensajeWhatsApp: "Hola, me interesa el servicio de Identidad Corporativa. ¿Pueden brindarme detalles?"
     },
     6: {
       titulo: "Producción de contenido gráfico",
@@ -223,14 +230,21 @@ function verMas(id) {
         Archivos listos para impresión profesional o uso digital.`
       ],
       planes: [
-        { nombre: "Plan UX", descripcion: "Investigación y diseño de UX." },
-        { nombre: "Plan UI", descripcion: "Diseño de interfaces visualmente atractivas." }
-      ]
+      ],
+      mensajeWhatsApp:"Hola, me gustaría cotizar la producción de contenido gráfico para mi proyecto."
     }
   };
 
   // Obtener los datos del servicio
   const servicio = serviciosData[id];
+
+   // 👉 AQUÍ VA EL CÓDIGO DINÁMICO DEL BOTÓN DE WHATSAPP 👇
+   const mensaje = encodeURIComponent(servicio.mensajeWhatsApp || "Hola, quiero más información.");
+   const enlaceWhatsApp = `https://wa.me/2281324175?text=${mensaje}`;
+   const btnWhatsApp = document.querySelector("#detalle-servicio a.btn-success");
+   btnWhatsApp.href = enlaceWhatsApp;
+   btnWhatsApp.setAttribute("target", "_blank");
+  
 
   // Llenar la sección de detalles
   document.getElementById("titulo-servicio").innerText = servicio.titulo;
@@ -252,38 +266,61 @@ function verMas(id) {
     listaElement.appendChild(li);
   });
 
+
+
   // Verificar si hay planes y mostrarlos, si aplica
-  const planListElement = document.getElementById("plan-list");
-  const planesSection = document.getElementById("planes");
-
-  // Si hay planes, los mostramos, si no, ocultamos la sección
-  if (servicio.planes.length > 0) {
-    planesSection.style.display = "block"; // Mostrar la sección de planes
-    planListElement.innerHTML = ''; // Limpiar los planes antes de agregar
-    servicio.planes.forEach(plan => {
-      const col = document.createElement("div");
-      col.classList.add("col-md-4", "d-flex", "justify-content-center");
-    
-      const beneficios = plan.beneficios.map(item => `<li>${item}</li>`).join("");
-    
-      col.innerHTML = `
-        <div class="card text-center p-3" style="width: 100%; max-width: 320px;">
-          <img src="${plan.imagen}" class="plan-img" alt="Imagen del ${plan.nombre}" style="height: 180px;">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <h5 class="card-title">${plan.nombre}</h5>
-            <p class="card-text">${plan.descripcion}</p>
-            <ul class="text-start mx-auto px-3 small">${beneficios}</ul>
-          </div>
-        </div>
-      `;
-      planListElement.appendChild(col);
-    });
-  } else {
-    planesSection.style.display = "none"; // Ocultar la sección de planes si no aplica
+ // Preparar el contenedor de planes
+ const planListElement = document.getElementById("plan-list");
+ const planesSection = document.getElementById("planes");
+ planListElement.innerHTML = ''; // Limpiar los planes antes de agregar
+  // Eliminar condiciones anteriores si existen
+  const condicionesDivExistente = document.getElementById("condiciones-div");
+  if (condicionesDivExistente) {
+    condicionesDivExistente.remove();
   }
+  
 
-  // Actualizar las migas de pan
-  document.getElementById("miga-titulo").innerText = servicio.titulo;
+    // Mostrar los planes si existen
+    if (servicio.planes.length > 0) {
+      planesSection.style.display = "block";
+  
+      servicio.planes.forEach((plan, index) => {
+        const col = document.createElement("div");
+        col.classList.add("col-md-4", "d-flex", "justify-content-center", "align-items-stretch");
+  
+        const beneficios = (plan.beneficios || []).map(item => `<li>${item}</li>`).join("");
+  
+        col.innerHTML = `
+          <div class="card text-center p-3" style="width: 100%; max-width: 320px;">
+            <img src="${plan.imagen}" class="plan-img" alt="Imagen del ${plan.nombre}" style="height: 180px;">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title">${plan.nombre}</sup></h5>
+              <p class="card-text">${plan.descripcion}</p>
+              <ul class="text-start mx-auto px-3 small">${beneficios}</ul>
+            </div>
+          </div>
+        `;
+        planListElement.appendChild(col);
+      });
+  
+      // 🔥 Insertar condiciones dinámicamente si el servicio tiene condiciones
+      if (servicio.condiciones && servicio.condiciones.length > 0) {
+        const condicionesDiv = document.createElement('div');
+        condicionesDiv.id = "condiciones-div";
+        condicionesDiv.className = "mt-4";
+  
+        condicionesDiv.innerHTML = `
+          <h5 class="text-start">Condiciones y Restricciones</h5>
+          <ul class="small text-justify px-3">
+            ${servicio.condiciones.map(item => `<li>${item}</li>`).join("")}
+          </ul>
+        `;
+        planesSection.appendChild(condicionesDiv);
+      }
+  
+    } else {
+      planesSection.style.display = "none"; // Si no hay planes, se oculta todo
+    }
 }
 
 function regresar() {
