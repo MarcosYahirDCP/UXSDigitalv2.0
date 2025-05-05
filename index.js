@@ -244,7 +244,7 @@ function verMas(id) {
    const btnWhatsApp = document.querySelector("#detalle-servicio a.btn-success");
    btnWhatsApp.href = enlaceWhatsApp;
    btnWhatsApp.setAttribute("target", "_blank");
-  
+
 
   // Llenar la sección de detalles
   document.getElementById("titulo-servicio").innerText = servicio.titulo;
@@ -327,4 +327,22 @@ function regresar() {
   // Regresar a la vista de servicios
   document.getElementById("detalle-servicio").style.display = "none";
   document.getElementById("servicios").style.display = "block";
+}
+
+
+function mostrarInicio() {
+  const sections = document.querySelectorAll("section");
+  const inicioSection = document.getElementById("inicio");
+  const caracteristicasSection = document.getElementById("caracteristicas");
+
+  // Oculta todas las secciones
+  sections.forEach(section => section.style.display = "none");
+
+  // Muestra inicio y características
+  inicioSection.style.display = "block";
+  caracteristicasSection.style.display = "block";
+
+  // Actualiza el menú activo
+  document.querySelectorAll(".nav-link").forEach(link => link.classList.remove("active"));
+  document.getElementById("inicio-link").classList.add("active");
 }
