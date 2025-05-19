@@ -75,28 +75,68 @@ function verMas(id) {
       mensajeWhatsApp: "Hola, estoy interesado en el servicio de Desarrollo de Software a la Medida. ¿Podrían brindarme más información?"
     },
     2: {
-      titulo: "Desarrollo Web",
-      descripcion: `Nuestro servicio de Desarrollo Web se enfoca en la creación de soluciones digitales personalizadas que permiten a las empresas establecer una presencia en línea efectiva y alineada con sus objetivos estratégicos. Nos especializamos en diseñar y desarrollar sitios web y aplicaciones web innovadoras, adaptadas a las necesidades específicas de cada cliente, con el fin de proporcionar una plataforma robusta, segura y fácil de usar, que se adapte a cualquier tipo de dispositivo.
+  titulo: "Desarrollo Web",
+  descripcion: `Nuestro servicio de Desarrollo Web se enfoca en la creación de soluciones digitales personalizadas que permiten a las empresas establecer una presencia en línea efectiva y alineada con sus objetivos estratégicos. Nos especializamos en diseñar y desarrollar sitios web y aplicaciones web innovadoras, adaptadas a las necesidades específicas de cada cliente, con el fin de proporcionar una plataforma robusta, segura y fácil de usar, que se adapte a cualquier tipo de dispositivo.
 
-      Trabajamos de la mano con nuestros clientes para entender sus requerimientos y transformar sus ideas en soluciones web funcionales, optimizando la experiencia del usuario, mejorando la accesibilidad y asegurando la integración fluida con otros sistemas. Nuestro enfoque ágil y flexible permite una implementación rápida, que se adapta continuamente a las necesidades cambiantes del mercado y del entorno tecnológico, garantizando que cada proyecto web sea competitivo, escalable y capaz de evolucionar conforme a los avances del sector.`,
-      imagenBanner: "resources/web_dev_img.webp",
-      imagenServicio: "resources/services_img/web_img.WEBP",
-      lista: [
-        `Presencia online efectiva:
-        Diseños que representan tu marca y transmiten confianza.`,
-        `Responsive Design:
-        Adaptabilidad total a móviles, tabletas y pantallas grandes.`,
-        `Optimización de velocidad:
-        Sitios rápidos y eficientes para mejorar la experiencia del usuario.`,
-        `Integración de herramientas:
-        Formularios, chat, redes sociales, y más conectados a tu sistema.`,
-        `SEO técnico:
-        Código limpio y estructurado para mejorar tu posicionamiento en buscadores.`
-      ],
-      planes: [], // No tiene planes, por lo que esta sección se ocultará
-      mensajeWhatsApp:"Hola, me interesa el servicio de Desarrollo Web. ¿Podrían darme más información?"
-
+  Trabajamos de la mano con nuestros clientes para entender sus requerimientos y transformar sus ideas en soluciones web funcionales, optimizando la experiencia del usuario, mejorando la accesibilidad y asegurando la integración fluida con otros sistemas. Nuestro enfoque ágil y flexible permite una implementación rápida, que se adapta continuamente a las necesidades cambiantes del mercado y del entorno tecnológico, garantizando que cada proyecto web sea competitivo, escalable y capaz de evolucionar conforme a los avances del sector.`,
+  imagenBanner: "resources/web_dev_img.webp",
+  imagenServicio: "resources/services_img/web_img.WEBP",
+  lista: [
+    `Presencia online efectiva:
+    Diseños que representan tu marca y transmiten confianza.`,
+    `Responsive Design:
+    Adaptabilidad total a móviles, tabletas y pantallas grandes.`,
+    `Optimización de velocidad:
+    Sitios rápidos y eficientes para mejorar la experiencia del usuario.`,
+    `Integración de herramientas:
+    Formularios, chat, redes sociales, y más conectados a tu sistema.`,
+    `SEO técnico:
+    Código limpio y estructurado para mejorar tu posicionamiento en buscadores.`
+  ],
+  planes: [
+    {
+      nombre: `Paquete Básico <sup>${1}</sup> <sup>${2}</sup> <sup>${3}</sup>`,
+      descripcion: "Ideal para negocios que quieren comenzar a mostrarse en internet.",
+      imagen: "resources/plan_basic_img.webp",
+      beneficios: [
+        `Sitio de 1 a 3 secciones (Inicio, Sobre Nosotros, Contacto)`,
+        `Diseño responsivo adaptable a dispositivos móviles`,
+        `Formulario de contacto básico`,
+        `Integración con redes sociales`,
+        `Presencia profesional sin complicaciones`
+      ]
     },
+    {
+      nombre: `Paquete Intermedio <sup>${1}</sup> <sup>${2}</sup> <sup>${3}</sup>`,
+      descripcion: "Para marcas que buscan más estructura y funcionalidades.",
+      imagen: "resources/plan_crecimiento_img.webp",
+      beneficios: [
+        `Sitio hasta de 6 secciones (Servicios, Blog, Galería, etc.)`,
+        `Diseño personalizado y optimizado`,
+        `Formulario de contacto avanzado`,
+        `Integración con Google Maps y botón de WhatsApp`,
+        `Certificado SSL y SEO básico`
+      ]
+    },
+    {
+      nombre: `Paquete Avanzado <sup>${1}</sup> <sup>${2}</sup> <sup>${3}</sup>`,
+      descripcion: "Pensado para empresas que necesitan un sitio robusto y a la medida.",
+      imagen: "resources/plan_premium_img.webp",
+      beneficios: [
+        `Secciones ilimitadas y estructura a medida`,
+        `Diseño completamente personalizado`,
+        `Integración con herramientas externas (calendarios, CRMs, etc.)`,
+        `SEO técnico avanzado y analítica integrada`,
+      ]
+    }
+  ],
+  condiciones: [
+    "¹ El servicio no incluye el costo de hosting ni dominio, estos se cotizan por separado.",
+    "² Las imágenes, textos y logotipos deben ser provistos por el cliente, salvo que se contraten servicios adicionales de redacción y branding.",
+    "³ Se puede contratar mantenimiento mensual, diseño de tienda en línea o branding como servicios adicionales."
+  ],
+  mensajeWhatsApp:"Hola, me interesa el servicio de Desarrollo Web. ¿Podrían darme más información?"
+},
     3: {
       titulo: "Diseño UX/UI",
       descripcion: `Nuestro servicio de Diseño UX/UI se enfoca en crear experiencias digitales centradas en el usuario, mediante soluciones visuales intuitivas y atractivas que optimizan la interacción con las plataformas digitales. Nos dedicamos a entender profundamente las necesidades y comportamientos de los usuarios para diseñar interfaces que sean tanto funcionales como visualmente agradables.
